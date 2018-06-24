@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="row">
+    <div class="col-5">
+        <img lass="featureette-image img-responsive" src="{{ member.image_source}}" alt="{{member.name}}"></img>
+        <h2 class="col-7">{{ member.name}}</h2>
+    </div>
+</div>
+
+<div class="col-12">
+    <p>{{ member.description }}</p>
+</div>
+
+{% endblock %}
